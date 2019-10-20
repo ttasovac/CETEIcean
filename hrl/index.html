@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+  <link rel="stylesheet" href="css/tei.css">
+  <script src="js/CETEI.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body>
+
+  <script type="text/javascript">
+    let c = new CETEI();
+    c.getHTML5('BenZvi_Goldberg.xml', function(data) {
+    document.getElementsByTagName("body")[0].appendChild(data);
+  });
+  let behaviors = {
+  "tei": {
+    "head": function(e) {
+      let level = document.evaluate("count(ancestor::tei-div)", e, null, XPathResult.NUMBER_TYPE, null);
+      let result = document.createElement("h" + level.numberValue);
+      for (let n of Array.from(e.childNodes)) {
+        result.appendChild(n.cloneNode());
+      }
+      return result;
+    },
+    "lb": ["<br/>"],
+  }
+};
+c.addBehaviors(behaviors);
+  </script>
+
+</body>
+</html>
