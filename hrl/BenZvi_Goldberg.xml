@@ -2,8 +2,8 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ben_Zvi_XXX">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Title</title>
@@ -14,53 +14,69 @@
          <sourceDesc>
             <p>Information about the source</p>
          </sourceDesc>
-      </fileDesc><profileDesc><correspDesc>
-         <correspAction type="sent">
-            <persName ref="https://viaf.org/viaf/71499998">יצחק בן צבי</persName>
-            <settlement>unknown</settlement>
-            <date when="1951-02-12">ו׳ אדר א׳ תשי׳א 12 בפברואר 1951</date>
-         </correspAction>
-         <correspAction type="received">
-            <persName ref="https://viaf.org/viaf/12434988">לאה גולדברג</persName>
-            <settlement>תל אביב</settlement>
-         </correspAction>
-      </correspDesc></profileDesc>
-  </teiHeader>
-  <text><body>
-     <dateline ><date when="1951-12-02" rend="center" >
-        <lb/>ו׳ אדר א׳ תשי׳א
-        <lb/>12 בפברואר 1951</date><address><street></street></address> </dateline>
-        <opener>
-       <lb/>    <salute>לכבוד ה<persName><roleName type="honorific">גב׳</roleName> <forename>לאה</forename> <surname><choice><corr>גולדברג</corr><sic>גולדבר</sic></choice></surname></persName> </salute>
-     <name type="address" rend="right">רחוב
-        ארנון 15
-        <lb/>תל-אביב</name></opener>
+      </fileDesc>
+      <profileDesc>
+         <correspDesc>
+            <correspAction type="sent">
+               <persName ref="https://viaf.org/viaf/71499998">יצחק בן צבי</persName>
+               <settlement>unknown</settlement>
+               <date when="1951-02-12">ו׳ אדר א׳ תשי׳א 12 בפברואר 1951</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="https://viaf.org/viaf/12434988">לאה גולדברג</persName>
+               <settlement ref="geonames.org/293397">תל אביב</settlement>
+            </correspAction>
+         </correspDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="facsimiles/benzvi_goldberg.png"/>
+   </facsimile>
+   <text>
+      <body>
+         <opener>
+            <dateline><date when="1951-12-02" rend="center">
+                  <lb/>ו׳ אדר א׳ תשי׳א <lb/>12 בפברואר 1951</date><address>
+                  <street/>
+               </address>
+            </dateline>
+            <lb/>לכבוד ה<persName><roleName type="honorific">גב׳</roleName>
+               <forename>לאה</forename>
+               <surname><choice>
+                     <corr>גולדברג</corr>
+                     <sic>גולדבר</sic>
+                  </choice></surname></persName>
+            <lb/>
+            <name type="address" rend="right">רחוב ארנון 15 <lb/>תל-אביב</name></opener>
+         <!-- <lb/><lb/> -->
+         <salute><choice>
+               <abbr>ח.נ.</abbr>
+               <expan>חברה נכבדה</expan>
+            </choice></salute>
+         <!-- <lb/> -->
 
-     <salute><choice><abbr>ח.נ.</abbr><expan>חברה נכבדה</expan></choice></salute>
-
-        <p><lb/> אשמח מאד אם בהיותך
-            ב<placeName>לונדון</placeName> תמסרי
-           <lb/>דרישת-שלום ממני ל<persName><roleName type="honorific">פרופ׳</roleName>
-               <surname>קאהלה</surname></persName>. נשארו לי זכרונות
-           <lb/>נעימים מפגישתי האחרונה בביתו בלונדון,
-            לפני
-            <lb/>שנים אחדות, אולם מאז לא עמדתי אתו בכתובים,
-           <lb/>ולצערי אינני יודע מה
-            כתובתו. מכל מקום, אני
-            <lb/>מצרף לך בזה את הכתובת של ה<persName><roleName>פרופ׳</roleName> <forename>ססיל</forename>
-               <surname>רות</surname></persName>,
-           <lb/>שבודאי יודע את מקומו ואת כתובתו. אם תראי את
-           <lb/>ה<persName><roleName type="honorific">פרופ׳</roleName> <surname>רות</surname></persName>
-            תואילי-נא <choice><abbr>ג׳כ</abbr><expan>גם כן</expan></choice> למסור לו דרישת שלום
-           <lb/>חמה ממני. ה  <persName><roleName type="honorific">פרופ׳</roleName>
-          <surname>קאהלה</surname></persName> הוא אחד מחסידי אומות
-           <lb/>העולם, שהגן על היהודים בזמן
-            הנאצים וגם בעצמו
-            <lb/>סבל מידם והיה מוכרח לעקור מ<placeName>גרמניה</placeName> בגלל הרדיפות.
-           <lb/>מתוך
-            ספריו ומתוך המגע אתו נוכתתי שהוא ידיד
-            <lb/>ישראל והוא הגרמני היחידי שיש לי עסק אתו.
-
-          </p><lb/><salute>בברכת חבר </salute><lb/><signed>י. בן צבי</signed></body>
-  </text>
+         <p>אשמח מאד אם בהיותך ב<placeName ref="geo-kima.org/Place/688">לונדון</placeName> תמסרי
+            <lb/>דרישת-שלום ממני ל<persName ref="https://www.wikidata.org/wiki/Q70136"><roleName
+                  type="honorific">פרופ׳</roleName>
+               <surname>קאהלה</surname></persName>. נשארו לי זכרונות <lb/>נעימים מפגישתי האחרונה
+            בביתו ב<placeName ref="geo-kima.org/Place/688">לונדון</placeName>, לפני <lb/>שנים אחדות,
+            אולם מאז לא עמדתי אתו בכתובים, <lb/>ולצערי אינני יודע מה כתובתו. מכל מקום, אני <lb/>מצרף
+            לך בזה את הכתובת של ה<persName ref="https://www.wikidata.org/wiki/Q1052358"
+                  ><roleName>פרופ׳</roleName>
+               <forename>ססיל</forename>
+               <surname>רות</surname></persName>, <lb/>שבודאי יודע את מקומו ואת כתובתו. אם תראי את
+                  <lb/>ה<persName><roleName type="honorific">פרופ׳</roleName>
+               <surname>רות</surname></persName> תואילי-נא <choice>
+               <abbr>ג׳כ</abbr>
+               <expan>גם כן</expan>
+            </choice> למסור לו דרישת שלום <lb/>חמה ממני. ה <persName><roleName type="honorific"
+                  >פרופ׳</roleName>
+               <surname>קאהלה</surname></persName> הוא אחד מחסידי אומות <lb/>העולם, שהגן על היהודים
+            בזמן הנאצים וגם בעצמו <lb/>סבל מידם והיה מוכרח לעקור מ<placeName>גרמניה</placeName> בגלל
+            הרדיפות. <lb/>מתוך ספריו ומתוך המגע אתו נוכתתי שהוא ידיד <lb/>ישראל והוא הגרמני היחידי
+            שיש לי עסק אתו. </p>
+         <salute>בברכת חבר </salute>
+         <signed>י. בן צבי</signed>
+      </body>
+   </text>
 </TEI>
